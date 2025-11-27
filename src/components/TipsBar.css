@@ -1,0 +1,107 @@
+.tips-bar {
+  position: fixed;
+  bottom: 70px;
+  right: 140px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: var(--shadow-md);
+  z-index: 900;
+  max-width: 340px;
+}
+
+.tips-bar-icon {
+  width: 28px;
+  height: 28px;
+  background: var(--accent-yellow);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #92400E;
+  flex-shrink: 0;
+}
+
+.tips-bar-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tips-bar-text {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.tips-bar-action {
+  background: var(--primary-soft);
+  color: var(--primary);
+  border: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+  font-family: var(--font-primary);
+}
+
+.tips-bar-action:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.tips-bar-close {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.tips-bar-close:hover {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.tips-bar-dots {
+  display: flex;
+  gap: 4px;
+  margin-left: 4px;
+}
+
+.tips-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--border-medium);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tips-dot.active {
+  background: var(--primary);
+  width: 16px;
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .tips-bar {
+    right: 12px;
+    left: 12px;
+    max-width: none;
+    bottom: 70px;
+  }
+}

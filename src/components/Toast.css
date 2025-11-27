@@ -1,0 +1,2 @@
+.toast { position: fixed; bottom: 100px; left: 50%; transform: translateX(-50%); background: var(--text-primary); color: var(--bg-card); padding: 14px 28px; border-radius: 14px; font-size: 14px; font-weight: 500; z-index: 2000; box-shadow: var(--shadow-lg); }
+.dark-mode .toast { background: var(--bg-elevated); color: var(--text-primary); border: 1px solid var(--border-light); }

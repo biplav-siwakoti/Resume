@@ -1,0 +1,12 @@
+.nav-tabs { position: fixed; bottom: 0; left: 0; right: 0; z-index: 1000; background: rgba(250, 251, 249, 0.92); backdrop-filter: blur(20px); border-top: 1px solid var(--border-light); padding: 10px 24px; display: flex; align-items: center; gap: 6px; overflow-x: auto; }
+.dark-mode .nav-tabs { background: rgba(13, 17, 23, 0.92); }
+.nav-tab { display: flex; align-items: center; gap: 8px; padding: 10px 18px; font-size: 13px; font-weight: 500; color: var(--text-secondary); background: transparent; border: none; border-radius: 10px; cursor: pointer; white-space: nowrap; transition: all 0.2s ease; font-family: var(--font-primary); }
+.nav-tab:hover { background: var(--primary-soft); color: var(--primary); }
+.nav-tab.active { background: var(--primary); color: white; }
+.nav-tab-icon { display: flex; align-items: center; }
+.nav-divider { width: 1px; height: 24px; background: var(--border-light); margin: 0 8px; }
+.nav-tab.game { color: var(--accent-purple); }
+.nav-tab.game:hover { background: rgba(168, 85, 247, 0.1); }
+.nav-tab.copilot { margin-left: auto; background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%); color: white; }
+.nav-tab.copilot:hover { box-shadow: 0 4px 16px rgba(139, 92, 246, 0.4); }
+@media (max-width: 768px) { .nav-tabs { padding: 8px 12px; gap: 4px; } .nav-tab { padding: 8px 12px; font-size: 12px; } .nav-tab-label { display: none; } .nav-tab.copilot .nav-tab-label { display: block; } .nav-divider { display: none; } }
