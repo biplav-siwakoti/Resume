@@ -259,39 +259,145 @@
   color: var(--primary);
 }
 
-/* Responsive */
+/* ============================================
+   RESPONSIVE - MOBILE FIXES
+   ============================================ */
+
 @media (max-width: 768px) {
+  /* Section header */
+  .section-header-styled {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
+
+  .section-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+  }
+
+  .section-title-main {
+    font-size: 28px;
+  }
+
+  .title-ampersand {
+    font-size: 32px;
+  }
+
+  .section-decoration {
+    display: none;
+  }
+
+  /* TIMELINE - REMOVE line and dots on mobile */
   .exp-timeline {
-    padding-left: 24px;
+    padding-left: 0; /* No padding needed without line */
   }
-  
+
+  .exp-timeline::before {
+    display: none; /* Hide the vertical line */
+  }
+
   .exp-dot {
-    left: -20px;
-    width: 14px;
-    height: 14px;
+    display: none; /* Hide the dots */
   }
-  
+
+  .exp-item {
+    padding-bottom: 20px;
+  }
+
+  /* Card */
   .exp-card {
-    padding: 20px;
+    padding: 16px;
   }
-  
+
+  .exp-card:hover {
+    transform: none; /* Disable transform on mobile */
+  }
+
   .exp-header {
     flex-direction: column;
+    gap: 12px;
   }
-  
+
   .exp-header-right {
     align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 8px;
   }
-  
+
   .exp-role {
-    font-size: 17px;
+    font-size: 16px;
   }
-  
+
+  .exp-company {
+    font-size: 14px;
+  }
+
+  .exp-meta {
+    font-size: 11px;
+  }
+
+  .exp-status {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+
+  .exp-type {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+
+  .exp-summary {
+    font-size: 14px;
+    padding-left: 12px;
+    margin-bottom: 16px;
+  }
+
+  .exp-bullets li {
+    font-size: 13px;
+    padding-left: 18px;
+    padding-bottom: 10px;
+    line-height: 1.7;
+  }
+
   .exp-total {
     flex-direction: column;
     gap: 8px;
     text-align: center;
+    padding: 16px 20px;
+    margin-top: 24px;
+  }
+
+  .exp-total-label {
+    font-size: 11px;
+  }
+
+  .exp-total-value {
+    font-size: 14px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .exp-card {
+    padding: 14px;
+  }
+
+  .exp-role {
+    font-size: 15px;
+  }
+
+  .exp-summary {
+    font-size: 13px;
+    padding-left: 10px;
+  }
+
+  .exp-bullets li {
+    font-size: 12px;
+    padding-left: 16px;
   }
 }
