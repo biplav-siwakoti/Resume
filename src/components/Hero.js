@@ -84,7 +84,7 @@ const Hero = ({ showToast }) => {
 
             <motion.div className="hero-ctas" variants={itemVariants}>
               <motion.a 
-                href="https://raw.githubusercontent.com/biplav-siwakoti/Resume/main/Biplav_Siwakoti_Resume.pdf"
+                href="/Biplav_Siwakoti_Resume.pdf"
                 download="Biplav_Siwakoti_Resume.pdf"
                 className="btn btn-primary"
                 whileHover={{ scale: 1.02 }}
