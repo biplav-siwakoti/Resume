@@ -473,6 +473,13 @@
   margin-bottom: 40px;
 }
 
+/* HIDE KPI cards on mobile */
+@media (max-width: 768px) {
+  .kpi-grid {
+    display: none;
+  }
+}
+
 .kpi-card {
   position: relative;
   background: var(--bg-card);
