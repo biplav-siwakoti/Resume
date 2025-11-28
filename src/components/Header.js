@@ -66,7 +66,7 @@ const Header = ({ darkMode, setDarkMode, showToast }) => {
   const handleDownloadCV = () => {
     showToast('📄 Downloading Resume...');
     const link = document.createElement('a');
-    link.href = 'https://raw.githubusercontent.com/biplav-siwakoti/Resume/main/Biplav_Siwakoti_Resume.pdf';
+    link.href = '/Biplav_Siwakoti_Resume.pdf';
     link.download = 'Biplav_Siwakoti_Resume.pdf';
     link.target = '_blank';
     document.body.appendChild(link);
